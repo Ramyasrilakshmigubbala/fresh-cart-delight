@@ -4,12 +4,32 @@ import { Link } from "react-router-dom";
 import { ShoppingCart, User, Menu, X, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { 
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator
+} from "@/components/ui/dropdown-menu";
+import { toast } from "sonner";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleAccountClick = () => {
+    toast("Account functionality coming soon!", {
+      description: "Sign in/sign up features will be available shortly.",
+    });
+  };
+
+  const handleCartClick = () => {
+    toast("Shopping cart coming soon!", {
+      description: "Your shopping cart will be available shortly.",
+    });
   };
 
   return (
@@ -44,12 +64,28 @@ const Header = () => {
 
           {/* User Actions */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="hidden md:flex items-center space-x-2 hover:bg-grocery-primary hover:bg-opacity-10">
-              <User size={20} />
-              <span className="hidden lg:inline">Account</span>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="hidden md:flex items-center space-x-2 hover:bg-grocery-primary hover:bg-opacity-10">
+                  <User size={20} />
+                  <span className="hidden lg:inline">Account</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56">
+                <DropdownMenuItem onClick={handleAccountClick}>Sign In</DropdownMenuItem>
+                <DropdownMenuItem onClick={handleAccountClick}>Create Account</DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={handleAccountClick}>My Profile</DropdownMenuItem>
+                <DropdownMenuItem onClick={handleAccountClick}>My Orders</DropdownMenuItem>
+                <DropdownMenuItem onClick={handleAccountClick}>My Wishlist</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             
-            <Button variant="ghost" className="relative flex items-center space-x-2 hover:bg-grocery-primary hover:bg-opacity-10">
+            <Button 
+              variant="ghost" 
+              className="relative flex items-center space-x-2 hover:bg-grocery-primary hover:bg-opacity-10"
+              onClick={handleCartClick}
+            >
               <ShoppingCart size={20} />
               <span className="hidden lg:inline">Cart</span>
               <span className="absolute -top-2 -right-2 bg-grocery-accent text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">2</span>

@@ -2,6 +2,8 @@
 import { Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
+import { toast } from "sonner";
 
 // Sample data for deals
 const deals = [
@@ -48,6 +50,19 @@ const deals = [
 ];
 
 const DealSection = () => {
+  const [cartCount, setCartCount] = useState<number>(0);
+
+  const handleAddToCart = (item: typeof deals[0]) => {
+    setCartCount(prev => prev + 1);
+    toast(`${item.name} added to cart!`, {
+      description: `${item.salePrice} per ${item.unit}`,
+      action: {
+        label: "View Cart",
+        onClick: () => console.log("Viewing cart")
+      },
+    });
+  };
+
   return (
     <section className="section-padding bg-grocery-background">
       <div className="container mx-auto px-4">
@@ -91,7 +106,10 @@ const DealSection = () => {
                   <span>Ends in: {deal.timeLeft}</span>
                 </div>
                 
-                <Button className="w-full bg-grocery-primary hover:bg-grocery-primary-dark">
+                <Button 
+                  className="w-full bg-grocery-primary hover:bg-grocery-primary-dark"
+                  onClick={() => handleAddToCart(deal)}
+                >
                   Add to Cart
                 </Button>
               </div>

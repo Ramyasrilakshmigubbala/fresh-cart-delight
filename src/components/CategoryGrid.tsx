@@ -8,42 +8,42 @@ const categories = [
     name: "Vegetables & Fruits",
     icon: Leaf,
     color: "bg-green-100 text-green-700",
-    link: "/categories/vegetables-fruits"
+    link: "/categories"
   },
   {
     id: 2,
     name: "Dairy & Eggs",
     icon: Milk,
     color: "bg-blue-100 text-blue-700",
-    link: "/categories/dairy-eggs"
+    link: "/categories"
   },
   {
     id: 3,
     name: "Bakery & Snacks",
     icon: Cookie,
     color: "bg-amber-100 text-amber-700",
-    link: "/categories/bakery-snacks"
+    link: "/categories"
   },
   {
     id: 4,
     name: "Meat & Seafood",
     icon: Beef,
     color: "bg-red-100 text-red-700",
-    link: "/categories/meat-seafood"
+    link: "/categories"
   },
   {
     id: 5,
     name: "Household Essentials",
     icon: Home,
     color: "bg-purple-100 text-purple-700",
-    link: "/categories/household"
+    link: "/categories"
   },
   {
     id: 6,
     name: "Beverages & Packaged Food",
     icon: Coffee,
     color: "bg-orange-100 text-orange-700",
-    link: "/categories/beverages-packaged"
+    link: "/categories"
   },
 ];
 
@@ -63,6 +63,7 @@ const CategoryGrid = () => {
             <Link
               key={category.id}
               to={category.link}
+              state={{ selectedCategory: category.id }}
               className="group hover-lift rounded-xl overflow-hidden"
             >
               <div className="flex flex-col items-center p-6 h-full bg-white border border-gray-100 rounded-xl shadow-sm">
