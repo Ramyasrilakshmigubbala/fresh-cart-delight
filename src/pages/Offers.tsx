@@ -57,16 +57,7 @@ const Offers = () => {
       category: "All Products",
       couponCode: "WELCOME10",
     },
-    {
-      id: 6,
-      title: "Weekend Flash Sale: 25% Off Selected Items",
-      description: "This weekend only! Grab amazing deals on selected premium grocery items with 25% off.",
-      validUntil: "2025-04-07T23:59:59",
-      image: "https://images.unsplash.com/photo-1604719312566-8912e9667d9f?q=80&w=1374",
-      discount: "25%",
-      category: "Selected Items",
-      couponCode: "FLASH25",
-    },
+    
   ];
 
   // Function to calculate remaining time

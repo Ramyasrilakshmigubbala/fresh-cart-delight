@@ -31,30 +31,8 @@ const BestSellers = () => {
       badge: "Organic",
       sold: "950 sold this week",
     },
-    {
-      id: 3,
-      name: "Artisan Sourdough Bread",
-      price: 3.99,
-      originalPrice: 4.99,
-      rating: 4.7,
-      reviews: 156,
-      image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc7b?q=80&w=1287",
-      category: "Bakery",
-      badge: "Handcrafted",
-      sold: "850 sold this week",
-    },
-    {
-      id: 4,
-      name: "Honey Roasted Almond Butter",
-      price: 7.99,
-      originalPrice: 9.99,
-      rating: 4.9,
-      reviews: 142,
-      image: "https://images.unsplash.com/photo-1612439805305-978171e3e24f?q=80&w=1229",
-      category: "Spreads & Condiments",
-      badge: "Customer Favorite",
-      sold: "780 sold this week",
-    },
+   
+   
     {
       id: 5,
       name: "Organic Baby Spinach (500g)",
@@ -67,18 +45,7 @@ const BestSellers = () => {
       badge: "Fresh Pick",
       sold: "720 sold this week",
     },
-    {
-      id: 6,
-      name: "Greek Yogurt (500g)",
-      price: 4.49,
-      originalPrice: 4.99,
-      rating: 4.7,
-      reviews: 118,
-      image: "https://images.unsplash.com/photo-1553787499-6f9133242821?q=80&w=1287",
-      category: "Dairy & Eggs",
-      badge: "High Protein",
-      sold: "650 sold this week",
-    },
+    
     {
       id: 7,
       name: "Cold-Pressed Olive Oil (500ml)",
@@ -115,18 +82,7 @@ const BestSellers = () => {
       badge: "Sustainable",
       sold: "490 sold this week",
     },
-    {
-      id: 10,
-      name: "Organic Raw Honey (500g)",
-      price: 8.99,
-      originalPrice: 10.49,
-      rating: 4.9,
-      reviews: 83,
-      image: "https://images.unsplash.com/photo-1589827577276-3cd7c3803ab4?q=80&w=1074",
-      category: "Sweeteners",
-      badge: "Pure & Natural",
-      sold: "460 sold this week",
-    },
+    
     {
       id: 11,
       name: "Premium Ground Coffee (500g)",
@@ -139,18 +95,7 @@ const BestSellers = () => {
       badge: "Freshly Ground",
       sold: "420 sold this week",
     },
-    {
-      id: 12,
-      name: "Dark Chocolate Bar (100g)",
-      price: 3.99,
-      originalPrice: 4.49,
-      rating: 4.8,
-      reviews: 72,
-      image: "https://images.unsplash.com/photo-1548907040-4d5e34ae5def?q=80&w=1287",
-      category: "Snacks & Sweets",
-      badge: "70% Cocoa",
-      sold: "390 sold this week",
-    },
+    
   ];
 
   // Group by categories for filtering

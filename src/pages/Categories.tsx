@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState, useEffect } from "react";
@@ -131,7 +130,6 @@ const Categories = () => {
     ],
     dairy: [
       { id: 7, name: "Whole Milk", price: 3.29, weight: "1L", image: "https://images.unsplash.com/photo-1563636619-e9143da7973b" },
-      { id: 8, name: "Greek Yogurt", price: 4.99, weight: "500g", image: "https://images.unsplash.com/photo-1584278858536-52732d3a34ea" },
       { id: 9, name: "Cheddar Cheese", price: 5.99, weight: "200g", image: "https://images.unsplash.com/photo-1552767059-ce182ead6c1b" },
       { id: 10, name: "Butter", price: 3.99, weight: "250g", image: "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d" },
       { id: 11, name: "Organic Eggs", price: 5.49, weight: "12 pcs", image: "https://images.unsplash.com/photo-1506976785307-8732e854ad03" },
@@ -140,29 +138,27 @@ const Categories = () => {
       { id: 12, name: "Whole Wheat Bread", price: 3.99, weight: "500g", image: "https://images.unsplash.com/photo-1598373182133-52452f7691ef" },
       { id: 13, name: "Croissants", price: 5.99, weight: "4 pcs", image: "https://images.unsplash.com/photo-1555507036-ab1f4038808a" },
       { id: 14, name: "Chocolate Cookies", price: 4.49, weight: "300g", image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e" },
-      { id: 15, name: "Sourdough Bread", price: 6.99, weight: "700g", image: "https://images.unsplash.com/photo-1585478259715-1c401da62500" },
       { id: 16, name: "Vanilla Cupcakes", price: 7.99, weight: "6 pcs", image: "https://images.unsplash.com/photo-1627834377411-8da5f4f09de8" },
     ],
     meat: [
       { id: 17, name: "Chicken Breast", price: 8.99, weight: "1kg", image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791" },
-      { id: 18, name: "Ground Beef", price: 9.99, weight: "500g", image: "https://images.unsplash.com/photo-1578333222994-8549a10d1c4b" },
-      { id: 19, name: "Salmon Fillet", price: 12.99, weight: "400g", image: "https://images.unsplash.com/photo-1599084993063-bc24d318eba1" },
+      
       { id: 20, name: "Pork Chops", price: 7.99, weight: "600g", image: "https://images.unsplash.com/photo-1560781290-7dc94c0f8f4f" },
-      { id: 21, name: "Shrimp", price: 14.99, weight: "300g", image: "https://images.unsplash.com/photo-1565680018160-64b74dd0fd1f" },
+   
     ],
     household: [
       { id: 22, name: "Laundry Detergent", price: 11.99, weight: "2L", image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce" },
-      { id: 23, name: "Dish Soap", price: 3.99, weight: "750ml", image: "https://images.unsplash.com/photo-1622460506041-4a2af8be501f" },
+    
       { id: 24, name: "Paper Towels", price: 5.49, weight: "6 rolls", image: "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec" },
       { id: 25, name: "Bathroom Cleaner", price: 4.29, weight: "500ml", image: "https://images.unsplash.com/photo-1563453392212-326f5e854473" },
-      { id: 26, name: "Trash Bags", price: 6.99, weight: "30 bags", image: "https://images.unsplash.com/photo-1610557892108-22f30d20bb15" },
+      
     ],
     beverages: [
       { id: 27, name: "Coffee Beans", price: 14.99, weight: "500g", image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e" },
       { id: 28, name: "Green Tea", price: 4.99, weight: "50 bags", image: "https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5" },
       { id: 29, name: "Orange Juice", price: 3.49, weight: "1L", image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba" },
       { id: 30, name: "Sparkling Water", price: 1.99, weight: "750ml", image: "https://images.unsplash.com/photo-1603569283847-aa295f0d016a" },
-      { id: 31, name: "Protein Shake", price: 2.99, weight: "330ml", image: "https://images.unsplash.com/photo-1578608288647-d7f8273e0b7a" },
+      
     ],
   };
 
